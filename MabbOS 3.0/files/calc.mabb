@@ -1,0 +1,25 @@
+_VAR _INPUT number1 First number___
+// Запрос у пользователя арифметическойй операции и второго числа
+_VAR _INPUT operation Operation___
+_VAR _INPUT number2 Second number___
+// Ответ
+_VAR _NUMBER answer 0
+// Если операция +, то сложение
+_IF operation = +
+    _OPERATION answer number1 + number2
+_ENDIF
+// Если операция -, то вычитание
+_IF operation = -
+    _OPERATION answer number1 - number2
+_ENDIF
+// Если операция *, то умножение
+_IF operation = *
+    _OPERATION answer number1 * number2
+_ENDIF
+// Если операция /, то деление
+_IF operation = /
+    _OPERATION answer number1 / number2
+_ENDIF
+// Вывод ответа и программа выполняется с первой строки
+_PRINT _V answer
+_EXECUTE 1

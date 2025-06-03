@@ -1,0 +1,3 @@
+_VAR _DATE date 0
+_PRINT YYYY-DD-MM
+_PRINT _V date

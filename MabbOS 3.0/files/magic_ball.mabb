@@ -1,0 +1,20 @@
+_VAR _INPUT vopros Enter a question___
+_VAR _NUMBER _RANDOM comp 1 4
+
+_IF comp = _INT 1
+_PRINT No 
+_ENDIF
+
+_IF comp = _INT 2
+_PRINT Yes 
+_ENDIF
+
+_IF comp = _INT 3
+_PRINT I don't know 
+_ENDIF
+
+_IF comp = _INT 4
+_PRINT Maybe
+_ENDIF
+
+_EXECUTE 1

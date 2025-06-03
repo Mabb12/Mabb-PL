@@ -1,0 +1,18 @@
+_VAR _NUMBER _RANDOM number 0 100
+_VAR _INPUT _INT input Guess the number from 0 to 100___
+
+_IF input < number
+    _PRINT Your number is less than the guessed one
+_ENDIF
+
+_IF input > number
+    _PRINT Your number is higher than the guessed one
+_ENDIF
+
+_IF input = number
+    _PRINT You win!
+    _PRINT Let's guess a new number...
+    _EXECUTE 1
+_ENDIF
+
+_EXECUTE 2

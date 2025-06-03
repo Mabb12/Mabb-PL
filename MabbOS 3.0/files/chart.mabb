@@ -1,0 +1,11 @@
+_VAR _INPUT Lol Enter a text
+_VAR _NUMBER count 0
+_VAR _NUMBER range 0
+_OPERATION _LEN range Lol
+_VAR _NUMBER lol 1
+
+_IF count < range
+    _OPERATION count count + lol
+    _PRINT _V count
+    _EXECUTE 7
+_ENDIF

@@ -1,0 +1,12 @@
+_VAR _NUMBER counter 0
+_VAR _INPUT _INT range Enter the number of second___
+_VAR _NUMBER number 1
+
+_IF counter < range
+    _SECOND 1
+    _OPERATION counter counter + number
+    _PRINT _V counter
+    _EXECUTE 4
+_ENDIF
+
+_EXECUTE 1
