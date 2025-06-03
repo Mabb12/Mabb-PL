@@ -1,0 +1,18 @@
+_INPUT second Number of second/exit
+_NUMBER x 0
+
+_IF x != second
+_SECOND 1
+_OPERATION x + x 1
+_PRINT-N x
+_EXECUTE 4
+_ENDIF
+
+_IF x = second
+_PRINT Stopwatch is off
+_END
+_ENDIF
+
+_IF second = exit
+_END
+_ENDIF

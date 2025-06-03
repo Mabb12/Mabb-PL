@@ -1,0 +1,16 @@
+_NUMBER secret _RANDOM 0 100
+_INPUT guess Guess the number from 0 to 100:
+
+_IF guess = secret
+_PRINT You win!
+_ENDIF
+
+_IF guess > secret
+_PRINT The number is greater than the guessed one.
+_EXECUTE 2
+_ENDIF
+
+_IF guess < secret
+_PRINT The number is less than the guessed one.
+_EXECUTE 2
+_ENDIF

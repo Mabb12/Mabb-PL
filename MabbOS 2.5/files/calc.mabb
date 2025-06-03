@@ -1,0 +1,27 @@
+_INPUT a First number or exit
+_INPUT operation Operation 
+_INPUT b Second number 
+_NUMBER x 0
+
+_IF a = exit
+_END
+_ENDIF
+
+_IF operation = + 
+_OPERATION x + a b
+_ENDIF
+
+_IF operation = -
+_OPERATION x - a b
+_ENDIF
+
+_IF operation = *
+_OPERATION x * a b
+_ENDIF
+
+_IF operation = /
+_OPERATION x / a b
+_ENDIF
+
+_PRINT-N x
+_BACK

@@ -1,0 +1,68 @@
+_INPUT player Rock/scissors/paper/exit
+_NUMBER comp _RANDOM 1 3
+
+_IF comp = int1
+
+_IF player = Rock
+_PRINT Draw
+_BACK
+_ENDIF
+
+_IF player = scissors
+_PRINT You lost
+_BACK
+_ENDIF
+ 
+_IF player = paper
+_PRINT You win
+_BACK
+_ENDIF
+
+_ENDIF
+
+
+
+_IF comp = int2
+
+_IF player = Rock
+_PRINT You win
+_BACK
+_ENDIF
+
+_IF player = scissors
+_PRINT Draw
+_BACK
+_ENDIF
+ 
+_IF player = paper
+_PRINT You lost
+_BACK
+_ENDIF
+
+_ENDIF
+
+
+
+_IF comp = int3
+
+_IF player = Rock
+_PRINT You lost
+_BACK
+_ENDIF
+
+_IF player = scissors
+_PRINT You win
+_BACK
+_ENDIF
+ 
+_IF player = paper
+_PRINT Draw
+_BACK
+_ENDIF
+
+_ENDIF
+
+
+_IF player = exit
+_END
+_ENDIF

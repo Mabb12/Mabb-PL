@@ -1,0 +1,35 @@
+_INPUT move Del/Read/Write/Add_text/exit
+
+_IF move = exit
+_END
+_ENDIF
+
+_INPUT file_name Enter file name
+
+_IF move = Del
+_INPUT y/n y/n
+_IF y/n = y
+_FILE-N file_name _DELETE
+_PRINT File deleted
+_ENDIF
+_IF y/n = n
+_BACK
+_ENDIF
+
+_IF move = Read
+_STRING content
+_FILE-N file_name _READ content
+_PRINT-N content
+_ENDIF
+
+_IF move = Write
+_INPUT append1 Enter text
+_FILE-N file_name _WRITE append1
+_ENDIF
+
+_IF move = Add_text
+_INPUT append2 Enter text
+_FILE-N file_name _APPEND append2
+_ENDIF
+
+_BACK
