@@ -1,6 +1,6 @@
 class Token:
     def __init__(self):
-        self.keywords = {"_PRINT", "_EXECUTE", "_IF", "_ENDIF", "_VAR", "_NUMBER", "_TEXT", "_INPUT", "_END", "_OPERATION", "_LABEL", "_CALL", "_ENDLABEL", "_LENGTH", "_TAKE", "_ENDTRY", "_ARRAY"}
+        self.keywords = {"_PRINT", "_EXECUTE", "_IF", "_ENDIF", "_VAR", "_NUMBER", "_TEXT", "_INPUT", "_END", "_OPERATION", "_LABEL", "_CALL", "_ENDLABEL", "_LENGTH", "_TAKE", "_ARRAY"}
         self.operations = {"-", "+", "/", "*"}
         self.comparison_op = {"<", ">", "_IN"}
         self.count = 0
